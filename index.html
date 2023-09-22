@@ -11,6 +11,7 @@
     <p>Please fill out this form with the required information</p>
     <!-- form -->
     <form action="https://register-demo.freecodecamp.org" method="post">
+      <!-- user info fieldset -->
       <fieldset>
         <label for="first-name"
           >Enter Your First Name:
@@ -35,7 +36,47 @@
             pattern="[a-z0-5]{8,}"
         /></label>
       </fieldset>
-      <fieldset></fieldset>
+      <!-- END user info fieldset -->
+
+      <!-- type account fieldset -->
+      <fieldset>
+        <label for="personal-account"
+          ><input
+            id="personal-account"
+            type="radio"
+            name="account-type"
+            value=""
+          />
+          Personal Account</label
+        >
+        <label for="business-account"
+          ><input
+            id="business-account"
+            type="radio"
+            name="account-type"
+            value=""
+          />
+          Business Account</label
+        >
+        <label for="terms-and-conditions"
+          ><input
+            id="terms-and-conditions"
+            type="checkbox"
+            name=""
+            value=""
+            required
+          />
+          I accept the
+          <a
+            href="https://www.freecodecamp.org/news/terms-of-service/"
+            target="_blank"
+          >
+            terms and conditions</a
+          ></label
+        >
+      </fieldset>
+      <!-- END type account fieldset -->
+
       <fieldset></fieldset>
       <input type="submit" name="" value="Submit" />
     </form>
