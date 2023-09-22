@@ -15,22 +15,27 @@
       <fieldset>
         <label for="first-name"
           >Enter Your First Name:
-          <input id="first-name" type="text" name="" value="" required
+          <input
+            id="first-name"
+            type="text"
+            name="first-name"
+            value=""
+            required
         /></label>
         <label for="last-name"
           >Enter Your Last Name:
-          <input id="last-name" type="text" name="" value=""
+          <input id="last-name" type="text" name="last-name" value=""
         /></label>
         <label for="email"
           >Enter Your Email:
-          <input id="email" type="email" name="" value="" required
+          <input id="email" type="email" name="email" value="" required
         /></label>
         <label for="new-password"
           >Create a New Password:
           <input
             id="new-password"
             type="password"
-            name=""
+            name="new-password"
             value=""
             required
             pattern="[a-z0-5]{8,}"
@@ -62,7 +67,7 @@
           ><input
             id="terms-and-conditions"
             type="checkbox"
-            name=""
+            name="terms-and-conditions"
             value=""
             required
           />
@@ -77,8 +82,45 @@
       </fieldset>
       <!-- END type account fieldset -->
 
-      <fieldset></fieldset>
-      <input type="submit" name="" value="Submit" />
+      <!-- file upload -->
+      <fieldset>
+        <label for="profile-picture">
+          Upload a profile picture:
+          <input
+            id="profile-picture"
+            type="file"
+            name="profile-picture"
+            value=""
+          />
+        </label>
+        <label for="age"
+          >Input your age (years):
+          <input id="age" type="number" min="13" max="120" name="age" value=""
+        /></label>
+        <label for="referrer"
+          >How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio"
+          >Provide a bio:
+          <textarea
+            id="bio"
+            rows="3"
+            cols="30"
+            name="bio"
+            placeholder="I like coding on the beach..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <!-- END file upload-->
+
+      <input type="submit" name="submit" value="Submit" />
     </form>
     <!-- END form -->
   </body>
